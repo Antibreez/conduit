@@ -1,14 +1,14 @@
 <template>
   <nav class="navbar navbar-light">
     <div class="container">
-      <router-link class="navbar-brand" :to="{name: 'home'}">
+      <router-link class="navbar-brand" :to="{name: 'globalFeed'}">
         MediumClone
       </router-link>
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
           <router-link
             class="nav-link"
-            :to="{name: 'home'}"
+            :to="{name: 'globalFeed'}"
             active-class="active"
             exact
           >
@@ -19,7 +19,7 @@
           <li class="nav-item">
             <router-link
               class="nav-link"
-              :to="{name: 'home'}"
+              :to="{name: 'globalFeed'}"
               active-class="active"
             >
               <i class="ion-compose"></i> &nbsp; New Article
@@ -29,7 +29,7 @@
           <li class="nav-item">
             <router-link
               class="nav-link"
-              :to="{name: 'home'}"
+              :to="{name: 'globalFeed'}"
               active-class="active"
             >
               <i class="ion-gear-a"></i> &nbsp; Settings
@@ -39,7 +39,7 @@
           <li class="nav-item">
             <router-link
               class="nav-link"
-              :to="{name: 'home', params: {slug: currentUser.username}}"
+              :to="{name: 'globalFeed', params: {slug: currentUser.username}}"
               active-class="active"
             >
               <img

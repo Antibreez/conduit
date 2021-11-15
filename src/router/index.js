@@ -1,13 +1,13 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
-import Home from '@/views/Home'
+import GlobalFeed from '@/views/GlobalFeed'
 import Register from '@/views/Register'
 import Login from '@/views/Login'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home,
+    name: 'globalFeed',
+    component: GlobalFeed,
   },
   {
     path: '/register',

@@ -37,6 +37,7 @@ const actions = {
       feedApi
         .getFeed(apiUrl)
         .then(response => {
+          console.log(response)
           context.commit(mutationTypes.getFeedSuccess, response.data)
           resolve(response.data)
         })
